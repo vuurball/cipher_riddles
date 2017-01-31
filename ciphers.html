@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css">
+	<style>
+		body{
+			background-color: whitesmoke;
+		}
+		.container{
+			margin-top:140px;
+		}
+		.letter{			
+			margin:2px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	
+
+	<div id="app">
+
+		<div class="container">
+		   <div class="content has-text-centered">
+
+		   <section class="hero is-primary">
+			  <div class="hero-body">
+			    <div class="container">
+			      <div class="columns is-vcentered">
+			        <div class="column">
+			          <p class="title">
+			            CIPHER PUZZLE
+			          </p>
+			          <p class="subtitle">
+			            Power up that brain of yours with <strong>cipher riddles</strong> solving 
+
+
+						<riddlebox :cipheredriddle="cipheredRiddle"></riddlebox>
+						<div class="box">
+						 	<a class="button is-black letter" v-for="letter in lettersArr">{{ letter }}</a>
+							
+						</div>
+
+
+			          </p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="hero-foot">
+			    <div class="container">
+				  	<a class="button is-info is-large">New Puzzle</a>
+					<a class="button is-large">Show Hint</a>
+					<a class="button is-large">Check</a>
+					<a class="button is-large">Restart</a>   
+					
+			    </div>
+			    vuurball@github.com 2017
+			    <br>
+			  </div>
+			  
+			</section>
+
+
+
+		   		
+
+				
+
+				
+		   
+		    </div>
+		  </div>
+	</div>
+
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+	<script src="main_ciphers.js"></script>
+
+
+</body>
+</html>
